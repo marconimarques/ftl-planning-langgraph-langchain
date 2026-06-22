@@ -92,9 +92,6 @@ What is the fleet and cost impact if terminal TB is closed?
 If demand at TA grows 20% and at TB drops 15%, with optimal redistribution, how many trucks?
 What is the impact of capping terminal TA's incoming volume to 80% of its historical capacity?
 ```
-
-The app generates these from live network data via `/questions`.
-
 ---
 
 ## Tech Stack
