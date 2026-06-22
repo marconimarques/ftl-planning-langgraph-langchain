@@ -21,7 +21,7 @@ with optimal redistribution, how many trucks do we need?
 
 The system does not guess. It:
 
-1. **Classifies** the intent (what-if vs shock-response) using Claude Haiku
+1. **Classifies** the intent (what-if vs shock-response) 
 2. **Parses** the question into structured solver parameters via the OR Agent
 3. **Solves** a Mixed Integer Linear Program with Pyomo + HiGHS
 4. **Explains** the result in two grounded sentences via the Transportation Expert
