@@ -15,8 +15,7 @@ The math is handled by a MILP solver. The language is handled by agents. Neither
 A fleet planner asks:
 
 ```
-If demand at terminal TA grows 20% and at TB drops 15%,
-with optimal redistribution, how many trucks do we need?
+If demand at terminal TA grows 20% and at TB drops 15%, with optimal redistribution, how many trucks do we need?
 ```
 
 The system does not guess. It:
