@@ -101,10 +101,6 @@ What is the impact of capping terminal TA's incoming volume to 80% of its histor
 <img src="./cli-interface-en.jpg" alt="Local File in Working Folder" width="950" />
 </p>
 
-<p align="center">
-<img src="./cli-interface-shock-response.jpg" alt="Local File in Working Folder" width="950" />
-</p>
-
 ---
 
 ## Tech Stack
