@@ -171,16 +171,4 @@ Brazilian Portuguese is the default language. `/language en` switches to English
 
 ---
 
-## Design Choices Worth Studying
-
-**The OR Agent is stateless.** Each question is parsed independently. `run_or_agent` clears the message list before every call. No implicit session carry-over, no parameter bleed between queries, fully reproducible results from the same input.
-
-**The Expert is grounded, not creative.** The Transportation Expert receives a `Computed facts` block alongside `Allowed` and `Forbidden` explanation lists generated from the solver output. If fuel did not change, the expert cannot mention fuel as a cause. If the fleet delta is negative, it cannot say the fleet improved. The facts constrain the language, not the other way around.
-
-**Excel drives the network.** Changing the files in `data/` rewires the planning network — terminals, collection points, distances, demand, costs, lever limits — without touching agent prompts or solver code. The OR Agent builds its system prompt from live network data at startup.
-
-**Shock response is deterministic after the LLM.** The Shock Response Agent proposes strategy candidates in natural language. Python validates each candidate, runs the MILP solver, and ranks results by recovered cost. The LLM never self-reports solver values; it only proposes what to test. All numbers in the output come from the solver.
-
----
-
 
