@@ -21,6 +21,12 @@ If demand at terminal TA grows 20% and at TB drops 15%, with optimal redistribut
 how many trucks do we need?
 ```
 
+Or the Operational, Financial and Procurement teams deal with:
+
+```
+What is the proposal to offset a 10% increase in fuel costs?
+```
+
 The system does not guess. It:
 
 1. **Classifies** the intent (what-if vs shock-response) 
