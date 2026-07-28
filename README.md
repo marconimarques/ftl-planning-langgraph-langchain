@@ -33,6 +33,7 @@ The system does not guess. It:
 2. **Parses** the question into structured solver parameters via the OR Agent
 3. **Solves** a Mixed Integer Linear Program with Pyomo + HiGHS
 4. **Explains** the result in two grounded sentences via the Transportation Expert
+5. **Enables** the business units to act together on possibilities by working on the figures in data\lever_limits.xlsx
 
 The LLM never touches a number it did not receive from the solver. The solver never sees natural language.
 
